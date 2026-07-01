@@ -1,0 +1,25 @@
+[package]
+name = "ckdg"
+version = "0.1.0"
+edition = "2024"
+description = "Cyber-Kinetic Defense Grid: physics compiler for industrial telemetry with local AI explanation"
+license = "MIT"
+
+[[bin]]
+name = "ckdg"
+path = "src/main.rs"
+
+[dependencies]
+axum       = { version = "0.7", features = ["ws"] }
+tokio      = { version = "1", features = ["rt-multi-thread", "macros", "sync", "time", "net", "signal"] }
+futures    = "0.3"
+reqwest    = { version = "0.12", default-features = false, features = ["json", "stream", "rustls-tls"] }
+serde      = { version = "1", features = ["derive"] }
+serde_json = "1"
+tower-http = { version = "0.7.0", features = ["fs"] }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true

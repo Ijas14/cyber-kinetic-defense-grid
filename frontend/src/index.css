@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:         #0d1117;
+  --surface:    #161b22;
+  --surface-hi: #1c2330;
+  --border:     #30363d;
+  --border-hi:  #484f58;
+
+  --cyan:   #00d4ff;
+  --green:  #3fb950;
+  --red:    #f85149;
+  --orange: #e3b341;
+  --purple: #bc8cff;
+  --blue:   #58a6ff;
+
+  --text-1: #e6edf3;
+  --text-2: #8b949e;
+  --text-3: #484f58;
+
+  --font: 'Inter', system-ui, sans-serif;
+  --mono: 'Share Tech Mono', 'JetBrains Mono', monospace;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: var(--font);
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-hi); border-radius: 4px; }
+
+/* Panel */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+/* Label */
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+
+/* Dot */
+.dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  display: inline-block; flex-shrink: 0;
+}
+.dot-green  { background: var(--green); box-shadow: 0 0 6px var(--green); }
+.dot-red    { background: var(--red);   box-shadow: 0 0 6px var(--red); }
+.dot-cyan   { background: var(--cyan);  box-shadow: 0 0 6px var(--cyan); }
+.dot-dim    { background: var(--border-hi); }
+
+/* Animations */
+@keyframes flow-dash   { to { stroke-dashoffset: -24; } }
+@keyframes spin        { to { transform: rotate(360deg); } }
+@keyframes fade-in     { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:none; } }
+@keyframes blink-red   { 0%,100% { border-color: rgba(248,81,73,0.4); } 50% { border-color: rgba(248,81,73,0.9); } }
+@keyframes pulse       { 0%,100% { opacity:1; } 50% { opacity:0.5; } }
+@keyframes shake       { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-3px)} 40%{transform:translateX(3px)} 60%{transform:translateX(-2px)} 80%{transform:translateX(2px)} }
+
+.animate-fade-in { animation: fade-in 0.25s ease both; }
+.animate-shake   { animation: shake 0.5s ease; }
