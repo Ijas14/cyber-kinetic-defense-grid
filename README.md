@@ -26,9 +26,7 @@ Every sensor frame is validated against hard Newtonian invariants in Rust. If a 
 
 ### Video Demonstration
 
-https://github.com/user-attachments/assets/ (or use HTML tag below)
-
-<video src="docs/demo.mp4" width="100%" controls autoplay loop muted></video>
+![Video Demonstration](docs/demo.mp4)
 
 ---
 
