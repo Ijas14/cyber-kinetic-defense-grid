@@ -32,3 +32,12 @@ Thumbs.db
 *.sw?
 .cursor/
 .agents/
+
+# Scratch files / Specs / Scripts
+/DEMO_SCRIPT.md
+/PLAN.md
+/SPEC.md
+/docs/DEMO_SCRIPT.md
+/docs/PLAN.md
+/docs/SPEC.md
+

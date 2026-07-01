@@ -22,13 +22,13 @@ Every sensor frame is validated against hard Newtonian invariants in Rust. If a 
 
 ---
 
-> 📸 _Screenshot: trigger an attack, see the violation and all three AI personas stream in sequence._
->
-> _(Add `docs/screenshots/demo.png` — capture the dashboard mid-stream with TRITON active)_
+![Demo Screenshot](docs/screenshots/demo.png)
 
-> 🎬 _Demo GIF: Click STUXNET → valve closes → flow persists → REALITY VIOLATION fires → Physics/Incident/Ops tabs stream in sequence._
->
-> _(Add `docs/demo.gif` — 10–15 seconds, no audio needed)_
+### Video Demonstration
+
+https://github.com/user-attachments/assets/ (or use HTML tag below)
+
+<video src="docs/demo.mp4" width="100%" controls autoplay loop muted></video>
 
 ---
 
