@@ -22,7 +22,7 @@ Every sensor frame is validated against hard Newtonian invariants in Rust. If a 
 
 ---
 
-> 📸 _Screenshot: trigger an attack, see the violation and all three AI personas stream simultaneously._
+> 📸 _Screenshot: trigger an attack, see the violation and all three AI personas stream in sequence._
 >
 > _(Add `docs/screenshots/demo.png` — capture the dashboard mid-stream with TRITON active)_
 
