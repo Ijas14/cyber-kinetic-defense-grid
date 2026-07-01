@@ -201,3 +201,9 @@ The entire pipeline — physics detection, LLM inference, and UI streaming — r
 ## Key Design Decisions
 
 See [docs/decisions/ADR-001-physics-compiler-local-llm.md](docs/decisions/ADR-001-physics-compiler-local-llm.md) for the full rationale on why cloud LLMs, pure ML anomaly detectors, and pure rules engines were considered and rejected.
+
+---
+
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for the full license text.
