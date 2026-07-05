@@ -122,7 +122,14 @@ The telemetry generator uses an **annealing thermal model**: the heater runs at 
 - [Node.js](https://nodejs.org/) ≥ 18
 - [Lemonade](https://github.com/amd/lemonade) running locally
 
-### 1. Start Lemonade
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Ijas14/cyber-kinetic-defense-grid.git
+cd cyber-kinetic-defense-grid
+```
+
+### 2. Start Lemonade
 
 ```bash
 # Default 2B model — fast, great for demo
@@ -134,7 +141,7 @@ lemonade serve --model Qwen3-4B-Instruct-2507-GGUF
 
 > **Tip:** You can switch models at runtime from the dashboard ⚙ settings panel — the server automatically unloads the old model from VRAM and warms up the new one.
 
-### 2. Configure and run
+### 3. Configure and run
 
 ```bash
 cp .env.example .env
@@ -144,7 +151,7 @@ source .env && cargo run --release
 
 The server blocks until the model is confirmed loaded into VRAM, then opens on **http://localhost:3000**.
 
-### 3. Trigger an attack
+### 4. Trigger an attack
 
 Click **STUXNET**, **TRITON**, or **NIGHTDRAGON** in the dashboard. Watch the P&ID diagram react, the `REALITY VIOLATION DETECTED` banner fire, and the three AI personas stream their analyses — rendered with LaTeX math — in real time.
 
